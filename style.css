@@ -41,7 +41,7 @@ ul {
   padding: 0px;
 }
 li, 
-h3 {
+h2 {
   list-style: none;
 }
 input,
@@ -61,8 +61,7 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+h2 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,7 +87,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.new-task-title {
   display: block;
   margin: 0 0 20px;
 }
@@ -112,7 +111,7 @@ li > * {
 li > input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+li > div {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -131,7 +130,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#completed-tasks div {
   text-decoration: line-through;
   color: #888;
 }
@@ -146,6 +145,6 @@ ul li.edit-mode input[type="text"] {
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.edit-mode div {
   display: none;
 }
