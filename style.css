@@ -4,34 +4,35 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.eisenhower-matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.eisenhower-matrix img {
   width: 100%;
 }
-.aaa .more-inf {
+.eisenhower-matrix .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.eisenhower-matrix { text-align: center;
 }
 }
-.centered-main-page-element {
+.main-page-element {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.task-label,
+.task-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.task-addition-form {
   display: flex;
 }
 ul {
