@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,7 +10,7 @@ body {
   display: block;
   text-align: right;
 }
-.eisenhower-matrix img {
+.eisenhower-matrix__scheme {
   width: 100%;
 }
 .eisenhower-matrix__more-info {
@@ -49,7 +49,8 @@ input,
 button{
   outline: none;
 }
-button {
+.task__button, 
+.task-addition-form__button {
   background: none;
   border: 0px;
   color: #888;
@@ -58,11 +59,12 @@ button {
   font-family: lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.task__button:hover, 
+.task-addition-form__button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h2 {
+.section__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -71,7 +73,8 @@ h2 {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.task__input,
+.task-addition-form__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -83,7 +86,8 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.task__input:focus,
+.task-addition-form__input:focus {
   color: #333;
 }
 
@@ -92,12 +96,12 @@ input[type="text"]:focus {
   display: block;
   margin: 0 0 20px;
 }
-input.task-addition-form__input {
+.task-addition-form__input {
   width: 318px;
 }
 
 /* Task list */
-li {
+.task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -105,47 +109,47 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.task > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.task__complete-checkbox {
   margin: 0 10px;
 }
-li > div {
+.task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >  input[type="text"] {
+.task__input {
   width: 226px;
 }
-button.task__button_delete img {
+.task__button_delete .task-button__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.task__button_delete img:hover {
+.task__button_delete .task-button__icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul.completed-tasks__tasks-list div {
+.completed-tasks__tasks-list .task__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.task__input {
   display: none;
 }
 
-ul li.tasks-list__task_edit-mode input[type="text"] {
+.tasks-list__task_edit-mode .task__input {
   display: inline-block;
   width: 224px;
 }
 
-ul li.tasks-list__task_edit-mode div {
+.tasks-list__task_edit-mode .task__label {
   display: none;
 }
